@@ -1,58 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <title>Document</title>
     <style>
-        h1{
-            color: rgb(203, 99, 153);
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body{
             margin: 0;
-            background-color: #f0f0f0;
+            padding: 0;
         }
-        #container {
-            background-color: black;
+        .firsnav{
+            height: 40px;
+            width: 100%;
+            background-color: #f4ced5;
             display: flex;
-            padding: 20px;
-            border-radius: 10px;
+            align-items: center;
+            gap: 8px;
+         justify-content: center;
+
+            .btn1{
+                background-color: red;
+                width: 90px;
+                height: 30px;
+                color: white;
+                border-radius: 5px;
+                border: none;
+            }
         }
-        #container > div {
-            height: 100px;
-            width: 100px;
+        .navbar2{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 5px
+            ;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+        .navbar2item{
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            height: 30px;
+            padding: 10px;
+           
+        }
+        .navbar2item a{
             margin: 10px;
-            transition: opacity 0.3s;
+            text-decoration: none;
+            color: black;
+
         }
-        #container > div:nth-child(1) {
-            background-color: yellow;
+        .refer{
+             width: 120px;
+             margin-right: 5px;
+             color: blue ;
+             background-color: aquamarine;
+             border: none;
+             border-radius: 5px;
         }
-        #container > div:nth-child(2) {
-            background-color: cyan;
+        .sign{
+            width: 90px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: white;
         }
-        #container > div:nth-child(3) {
-            background-color: magenta;
+        .p1{
+            font-size: 40px;
+            color: rgb(98, 98, 218);
+            
+
         }
-        #container > div:nth-child(4) {
-            background-color: lightgreen;
+        .p2{
+            font-size: 30px;
+            color: rgb(103, 103, 231);
         }
-        #container > div:hover {
-            opacity: 1;
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 80px;
+            gap: 8px;
+            padding: 30px;
+            
         }
-        #container > div:hover ~ div {
-            opacity: 0.5;
+        .btn3{
+            width: 10%;
+            height: 30px;
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            border: none;
         }
+        span{
+            font-size: 15px;
+            font-weight: 900;
+        }
+      .video{
+        display: flex;
+        justify-content: end;
+        position: absolute
+        ;
+        top: 130px;
+        right: 10px;
+      }
+      .video video{
+        width: 500px;
+      }
+      footer{
+        height: 100px;
+        width: 100%;
+        background-color: blue
+        ;
+       position: absolute;
+       bottom: 0px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+      }
+      .footspan1{
+        font-size: 30px;
+      }
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>CARDS</h1>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="firsnav">
+        <p>Application for our 6th November Batches are now open!</p>
+        <button  class="btn1">Apply Now</button>
+
     </div>
+    <div class="navbar2">
+        <div class="navbar2item">
+            <img src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp" alt="">
+        </div>
+        <div class="navbar2item">
+            <a href="">Courses</a>
+            <a href="">Fees</a><a href="">Events</a><a href="">Learn</a><a href="">Success Strories</a><a href="">
+                Hire Frome us
+            </a>
+        </div>
+        <div class="navbar2item"> 
+            <button class="refer">Refer & Earn</button>
+            <button class="sign"> Sign Up</button>
+        </div>
+    </div>
+    <div class="content">
+          <span class="p1">Proof that dreams do </span>
+        <span class="p2">come true</span> 
+        <span>A testament to what's possible</span>
+        <button class="btn3">APPLY NOW</button>
+
+    </div>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0867JeIfyLY?si=-0jFYN_ubfFKvFDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+     <footer>
+        <span class="footspan1">How is Masai Creating impact</span>
+        <span class="footspan2">400 Students palced</span>
+
+     </footer>
+
 </body>
 </html>
