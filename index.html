@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h1{
+            color: rgb(203, 99, 153);
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #container {
+            background-color: black;
+            display: flex;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #container > div {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            transition: opacity 0.3s;
+        }
+        #container > div:nth-child(1) {
+            background-color: yellow;
+        }
+        #container > div:nth-child(2) {
+            background-color: cyan;
+        }
+        #container > div:nth-child(3) {
+            background-color: magenta;
+        }
+        #container > div:nth-child(4) {
+            background-color: lightgreen;
+        }
+        #container > div:hover {
+            opacity: 1;
+        }
+        #container > div:hover ~ div {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>CARDS</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
